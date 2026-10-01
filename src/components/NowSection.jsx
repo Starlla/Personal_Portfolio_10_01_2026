@@ -12,7 +12,7 @@ const SWATCHES = ["#5b3df5", "#ff5fa2", "#16a57a", "#1f8fe0"];
 
 export function Three() {
   const [off, setOff] = useState(0);
-  const [tgs, setTgs] = useState([true, false, false, true]);
+  const [tgs, setTgs] = useState([true, true, false, false]);
   const [accent, setAccent] = useState(null);
   useEffect(() => {
     if (accent) document.documentElement.style.setProperty("--accent", accent);
@@ -55,7 +55,7 @@ export function Three() {
         <div className="lab-card"><b>Glass Orbs</b><div className="orbs">
           <i style={{ width: 34, height: 34, left: 0, top: 18 }}></i><i style={{ width: 30, height: 30, left: 30, top: 0 }}></i><i style={{ width: 26, height: 26, left: 38, top: 32 }}></i></div></div>
         <div className="lab-card"><b>Micro Toggles</b><div className="toggles">
-          {tgs.map((on, k) => (<button key={k} className="tg" role="switch" aria-checked={on} aria-label={"Toggle " + (k + 1)} onClick={() => setTgs(tgs.map((v, j) => j === k ? !v : v))}></button>))}
+          {tgs.map((on, k) => (<button key={k} className={"tg tg" + (k + 1)} role="switch" aria-checked={on} aria-label={"Toggle " + (k + 1)} onClick={() => setTgs(tgs.map((v, j) => j === k ? !v : v))}></button>))}
         </div></div>
         <div className="lab-card"><b>Theme Me</b><div className="swatches">
           {SWATCHES.map((c, k) => (<button key={c} className="sw" style={{ background: c }} aria-label={"Accent color " + (k + 1)} aria-pressed={cur === c} onClick={() => setAccent(k ? c : null)}></button>))}
