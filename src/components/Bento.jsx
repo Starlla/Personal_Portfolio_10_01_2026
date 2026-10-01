@@ -28,7 +28,7 @@ export function Bento() {
       <h3>Focus Areas <span style={{ color: "var(--pink)" }}><Icon n="spark" /></span></h3>
       <p>Making data-heavy screens feel calm and fast.</p>
       <div><b style={{ fontSize: 13 }}>What I reach for:</b>
-        <ul style={{ marginTop: 6 }}><li>React, Vite & React Router</li><li>Charts and live API data</li><li>Node, Express & MongoDB</li></ul></div>
+        <ul style={{ marginTop: 6 }}><li>React, Angular & Vite</li><li>Charts and live API data</li><li>Node, Express & MongoDB</li><li>Django & Postgres</li></ul></div>
     </div>
     <div className="box mintbg">
       <h3>Build Log <span style={{ color: "var(--mint)" }}><Icon n="code" /></span></h3>
