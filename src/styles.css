@@ -85,6 +85,24 @@ h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.02em}
 .doodle{position:absolute;pointer-events:none}
 .deck-hint{position:absolute;left:0;right:18%;bottom:-26px;text-align:center;font-family:var(--f-hand);font-size:19px;color:var(--ink-soft)}
 
+/* hero decorations */
+.hero > .brand,.hero > .hero-body{position:relative;z-index:1}
+.hero-blob{position:absolute;z-index:0;width:min(520px,60vw);aspect-ratio:1;border-radius:50%;right:-170px;top:50%;transform:translateY(-42%);
+  background:radial-gradient(circle at 35% 35%,#ff8cc4,#ff5fa2 55%,#ea4a9c);pointer-events:none}
+.hero-zig{position:absolute;z-index:0;width:150px;top:-14px;left:56%;transform:rotate(-6deg);pointer-events:none}
+.deck-wrap{position:relative;justify-self:center;width:100%;max-width:390px}
+.deck-wrap .deck{position:relative;z-index:1}
+.burst{position:absolute;z-index:0;width:190px;left:-72px;top:-54px;pointer-events:none;animation:burst-spin 60s linear infinite}
+@keyframes burst-spin{to{transform:rotate(360deg)}}
+.loop{position:absolute;z-index:2;width:88px;right:-26px;bottom:20%;pointer-events:none}
+@media (max-width:640px){
+  .hero-blob{top:auto;bottom:-150px;right:-150px;transform:none;width:420px}
+  .hero-zig{left:auto;right:18px;width:110px}
+  .deck-wrap{max-width:330px;margin-bottom:24px}
+  .burst{width:150px;left:-40px;top:-36px}
+  .loop{right:-10px;width:70px}
+}
+
 /* featured work */
 .work{padding:clamp(20px,2.6vw,30px);display:flex;flex-direction:column;gap:16px}
 .work-head{display:flex;align-items:center;gap:10px}
