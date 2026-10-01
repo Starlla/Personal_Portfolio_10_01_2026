@@ -89,7 +89,7 @@ h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.02em}
 .hero > .brand,.hero > .hero-body{position:relative;z-index:1}
 .hero-blob{position:absolute;z-index:0;width:min(520px,60vw);aspect-ratio:1;border-radius:50%;right:-170px;top:50%;transform:translateY(-42%);
   background:radial-gradient(circle at 35% 35%,#ff8cc4,#ff5fa2 55%,#ea4a9c);pointer-events:none}
-.hero-zig{position:absolute;z-index:0;width:160px;top:-12px;left:40%;transform:rotate(-8deg);pointer-events:none}
+.hero-zig{position:absolute;z-index:0;width:118px;top:18px;left:35%;transform:rotate(-8deg);pointer-events:none}
 .deck-wrap{position:relative;justify-self:center;width:100%;max-width:390px}
 .deck-wrap .deck{position:relative;z-index:1}
 .burst{position:absolute;z-index:0;width:190px;left:-72px;top:-54px;pointer-events:none;animation:burst-spin 60s linear infinite}
@@ -97,7 +97,7 @@ h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.02em}
 .loop{position:absolute;z-index:2;width:88px;right:-26px;bottom:20%;pointer-events:none}
 @media (max-width:640px){
   .hero-blob{top:auto;bottom:-150px;right:-150px;transform:none;width:420px}
-  .hero-zig{left:44%;width:110px}
+  .hero-zig{left:36%;top:10px;width:76px}
   .deck-wrap{max-width:330px;margin-bottom:24px}
   .burst{width:150px;left:-40px;top:-36px}
   .loop{right:-10px;width:70px}
