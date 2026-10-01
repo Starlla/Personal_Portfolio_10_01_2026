@@ -8,7 +8,7 @@ export function Drawer({ p, onClose }) {
     <aside className="drawer" role="dialog" aria-modal="true" aria-label={p.title + " case study"} onClick={e => e.stopPropagation()}>
       <div className="top-r"><span className="badge">{p.kind} · {p.year}</span><button className="x" onClick={onClose} aria-label="Close" autoFocus><Icon n="x" /></button></div>
       <h2>{p.title}</h2>
-      <Art type={p.art} />
+      {p.image ? (<img className="shot" src={p.image} alt={p.title + " screenshot"} />) : (<Art type={p.art} />)}
       <h4>Role</h4><p>{p.role}</p>
       <h4>The problem</h4><p>{p.problem}</p>
       <h4>What I did</h4><ul>{p.did.map(d => (<li key={d}>{d}</li>))}</ul>

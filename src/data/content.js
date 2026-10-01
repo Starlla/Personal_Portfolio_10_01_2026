@@ -1,3 +1,5 @@
+import siteShot from "../assets/personal-site.webp";
+
 export const PROFILE = {
   first: "Claire", name: "Claire Tong", city: "San Francisco",
   email: "claire.cy.tong@gmail.com",
@@ -17,6 +19,7 @@ export const PROJECTS = [
     did: ["Built a single-page React app with Vite and deployed it on Vercel", "Organized it into Work, Stack, Digital Twin and Contact sections with in-page navigation", "Embedded my AI digital twin (a Hugging Face Space) so visitors can chat with it on the page", "Wrote the copy and project write-ups around the product decisions behind each build"],
     learned: "A portfolio is a product too. Deciding what a recruiter sees in the first ten seconds shaped every section.",
     art: "site",
+    image: siteShot,
     links: [{ label: "Visit live site", href: "https://claire-personal-website-may-2026.vercel.app/" }],
   },
   {
