@@ -8,7 +8,7 @@ export function Contact() {
     const sel = () => { const el = document.getElementById("email-addr"); const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
     try { navigator.clipboard.writeText(PROFILE.email).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1800); }).catch(sel); } catch (e) { sel(); }
   };
-  const feats = [["smile", "Frontend first", "Interfaces that feel fast and friendly."], ["spark", "Full-stack ready", "Node, Express and MongoDB when needed."], ["phone", "Mobile roots", "Started out shipping Android apps."], ["heart", "Detail obsessed", "Loading states, errors, edge cases."]];
+  const feats = [["smile", "Frontend first", "Interfaces that feel fast and friendly."], ["spark", "Full-stack ready", "Node, Express and MongoDB when needed."], ["phone", "Mobile ready", "Cross-platform apps with React Native."], ["heart", "Detail obsessed", "Loading states, errors, edge cases."]];
   return (<div className="panel cta-band" id="contact">
     <div className="cta-l">
       <h2>Let's build <span className="sw-u">something<Squiggle /></span> awesome together!</h2>
