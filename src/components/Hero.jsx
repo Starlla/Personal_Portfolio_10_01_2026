@@ -5,7 +5,7 @@ import { PROFILE } from "../data/content";
 export function Hero() {
   return (<section className="panel hero" id="about">
     <span className="hero-blob" aria-hidden="true"></span>
-    <svg className="hero-zig" viewBox="0 0 220 60" aria-hidden="true"><path d="M6 46 L30 10 L44 50 L70 8 L84 52 L110 10 L124 50 L150 8 L164 48 L190 12 L214 40" fill="none" stroke="#2aa8ff" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round"/></svg>
+    <svg className="hero-zig" viewBox="0 0 220 60" aria-hidden="true"><path d="M6 42 C 12 14, 24 8, 30 30 S 42 54, 52 28 S 66 4, 76 26 S 92 50, 104 24 S 120 6, 130 30 S 148 48, 158 22 S 176 10, 186 28 S 204 38, 214 16" fill="none" stroke="#2aa8ff" strokeWidth="6.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M10 46 C 18 22, 26 16, 32 34 S 46 50, 56 32" fill="none" stroke="#2aa8ff" strokeWidth="3" strokeLinecap="round" opacity=".45"/></svg>
 
     <div className="brand">
       <a className="logo" href="#top"><span className="mk">CT</span>Claire Tong</a>
