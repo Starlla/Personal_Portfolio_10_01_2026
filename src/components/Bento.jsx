@@ -1,9 +1,7 @@
-import { useState } from "react";
 import { Icon } from "./Icons";
 import { PROFILE, PROJECTS } from "../data/content";
 
 export function Bento() {
-  const [playing, setPlaying] = useState(true);
   return (<div className="panel bento">
     <div className="box">
       <h3>My Internet <svg width="28" height="28" viewBox="0 0 30 30" fill="none" stroke="var(--mint)" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="15" cy="15" r="5"/><path d="M15 2v6M15 22v6M2 15h6M22 15h6M6 6l4 4M20 20l4 4M24 6l-4 4M10 20l-4 4"/></svg></h3>
@@ -16,15 +14,9 @@ export function Bento() {
       <svg width="56" height="10" viewBox="0 0 56 10" style={{ marginTop: "auto" }} aria-hidden="true"><path d="M2 6 Q 8 1 14 6 T 26 6 T 38 6 T 54 6" fill="none" stroke="var(--accent)" strokeWidth="2.4" strokeLinecap="round"/></svg>
     </div>
     <div className="box warm">
-      <h3>Now Shipping <span className={"eq" + (playing ? "" : " paused")} aria-hidden="true"><i></i><i></i><i></i><i></i></span></h3>
+      <h3>Now Shipping <span className="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span></h3>
       <div className="player"><div className="cover">CD</div><div><b>crypto_dash</b><span>React 19 · Vite</span></div></div>
       <div className="track" style={{ background: "color-mix(in srgb,#ff8a3d 20%,var(--tile))" }}><i style={{ width: "72%", background: "#ff8a3d" }}></i></div>
-      <div className="controls">
-        <Icon n="prev" fill />
-        <button className="play" onClick={() => setPlaying(!playing)} aria-label={playing ? "Pause" : "Play"}><Icon n={playing ? "pause" : "play"} fill /></button>
-        <Icon n="next" fill />
-        <Icon n="shuffle" />
-      </div>
     </div>
     <div className="box">
       <h3>Looking For <span style={{ color: "var(--accent)" }}><Icon n="code" /></span></h3>
