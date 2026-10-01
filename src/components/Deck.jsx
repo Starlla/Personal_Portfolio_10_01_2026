@@ -8,7 +8,7 @@ const DECK = [
   { id: "pace", bg: "linear-gradient(170deg,#7ad3ff 0%,#7b5dff 50%,#24124f 100%)", label: "PaceExchange", sub: "Android · Firebase" },
 ];
 
-const POS = ["rotate(-4deg)", "translate(26px,-6px) rotate(4deg)", "translate(48px,-4px) rotate(9deg)", "translate(66px,4px) rotate(14deg)"];
+const POS = ["rotate(-4deg)", "translate(20px,-6px) rotate(4deg)", "translate(36px,-4px) rotate(9deg)", "translate(50px,4px) rotate(14deg)"];
 
 export function Deck() {
   const [i, setI] = useState(0);
