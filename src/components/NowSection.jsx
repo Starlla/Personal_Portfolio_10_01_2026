@@ -1,11 +1,17 @@
 import { useState, useEffect } from "react";
 import { Icon, Star } from "./Icons";
+import RED_POPPY from "../assets/paintings/red-poppy.webp";
+import ALSTROEMERIA from "../assets/paintings/alstroemeria.webp";
+import ALPINE_MEADOW from "../assets/paintings/alpine-meadow.webp";
+import CHERRY_BLOSSOM from "../assets/paintings/cherry-blossom.webp";
+import BLUE_POPPY from "../assets/paintings/blue-poppy.webp";
 
 const SCENES = [
-  { cap: "golden hour", bg: "linear-gradient(180deg,#ffb36b 0%,#ff6a88 45%,#3a1f6e 100%)", sil: "M0 70 L10 62 L18 66 L26 52 L34 58 L44 46 L52 56 L62 50 L72 58 L84 54 L100 60 L100 100 L0 100Z" },
-  { cap: "palm walks", bg: "linear-gradient(180deg,#ff9a76 0%,#c4508a 55%,#2a1a55 100%)", sil: "M47 100 L48.5 52 L50.5 52 L52 100Z M49 52 Q 30 44 22 52 M49 52 Q 66 42 78 50 M49 52 Q 40 36 30 34 M49 52 Q 60 36 72 34" },
-  { cap: "coffee & docs", bg: "linear-gradient(180deg,#5a4636 0%,#2c2018 100%)", sil: "M30 70 h34 v8 a10 10 0 0 1-10 10 h-14 a10 10 0 0 1-10-10z M64 72 q10 0 10 6 t-10 6" },
-  { cap: "city lights", bg: "linear-gradient(180deg,#1b1240 0%,#3a1f6e 50%,#ff5fa2 120%)", sil: "M0 100 L0 60 L12 60 L12 40 L24 40 L24 66 L36 66 L36 30 L50 30 L50 70 L62 70 L62 46 L76 46 L76 62 L88 62 L88 50 L100 50 L100 100Z" },
+  { cap: "red poppy", alt: "Watercolor of a red poppy with buds and feathery leaves", src: RED_POPPY },
+  { cap: "alstroemeria", alt: "Watercolor of pink alstroemeria flowers with teal leaves", src: ALSTROEMERIA },
+  { cap: "alpine meadow", alt: "Watercolor landscape of snowy mountains, pine trees and a green meadow", src: ALPINE_MEADOW },
+  { cap: "cherry blossom", alt: "Watercolor of a cluster of pink cherry blossoms", src: CHERRY_BLOSSOM },
+  { cap: "blue poppy", alt: "Watercolor of two blue Himalayan poppies with buds", src: BLUE_POPPY },
 ];
 
 const SWATCHES = ["#5b3df5", "#ff5fa2", "#16a57a", "#1f8fe0"];
@@ -36,15 +42,13 @@ export function Three() {
     <section>
       <div className="sec-t">Off Screen <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" strokeWidth="2.4" strokeLinecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/><circle cx="12" cy="12" r="3"/></svg></div>
       <div className="photos">
-        {shown.map((s, k) => (<div key={k} className="photo" style={{ background: s.bg }}>
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} aria-hidden="true"><path d={s.sil} fill="rgba(15,8,35,.75)" stroke="rgba(15,8,35,.75)" strokeWidth="2.5"/></svg>
-          <span>{s.cap}</span></div>))}
+        {shown.map((s, k) => (<div key={s.cap} className="photo"><img src={s.src} alt={s.alt} loading="lazy" /><span>{s.cap}</span></div>))}
       </div>
       <div className="foot-row">
-        <p>The places and small moments that recharge me between commits.</p>
+        <p>Watercolors I paint to unwind between commits.</p>
         <div className="arrows">
-          <button aria-label="Previous" onClick={() => setOff((off + 3) % 4)}><Icon n="left" /></button>
-          <button aria-label="Next" onClick={() => setOff((off + 1) % 4)}><Icon n="arrow" /></button>
+          <button aria-label="Previous paintings" onClick={() => setOff((off + SCENES.length - 1) % SCENES.length)}><Icon n="left" /></button>
+          <button aria-label="Next paintings" onClick={() => setOff((off + 1) % SCENES.length)}><Icon n="arrow" /></button>
         </div>
       </div>
     </section>

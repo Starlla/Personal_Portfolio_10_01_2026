@@ -181,9 +181,13 @@ a,button,[role="switch"],label{cursor:var(--cur-pointer)}
 .now-list .ic .icon{width:16px;height:16px}
 .now-list b{display:block;font-size:12.5px}
 .tag{align-self:flex-start;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700;padding:7px 13px;border-radius:999px;text-decoration:none}
-.photos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
-.photo{aspect-ratio:3/4.4;border-radius:12px;position:relative;overflow:hidden;max-width:100%}
-.photo span{position:absolute;left:8px;bottom:6px;color:#fff;font-family:var(--f-hand);font-size:17px;line-height:1.1;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.photo{aspect-ratio:4/5;border-radius:12px;position:relative;overflow:hidden;max-width:100%}
+.photo{background:#ece9f4}
+.photo img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;transition:transform .4s ease}
+.photo:hover img{transform:scale(1.05)}
+.photo::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(transparent,rgba(15,8,35,.6));pointer-events:none}
+.photo span{position:absolute;z-index:1;left:8px;right:6px;bottom:6px;color:#fff;font-family:var(--f-hand);font-size:20px;line-height:1.1;overflow-wrap:anywhere;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 .arrows{display:flex;gap:8px;justify-content:flex-end;flex:none}
 .arrows button{width:30px;height:30px;border-radius:9px;border:0;display:grid;place-items:center;cursor:var(--cur-pointer);color:#fff;background:var(--pink)}
 .arrows.blue button{background:#2aa8ff}
@@ -346,6 +350,5 @@ footer nav a:hover{background:#2b2650;opacity:1}
 }
 @media (max-width:440px){
   .bento{grid-template-columns:1fr}
-  .photos{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
