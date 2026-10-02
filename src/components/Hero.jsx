@@ -20,7 +20,7 @@ export function Hero() {
       <div>
         <span className="badge">Frontend engineer · {PROFILE.city}</span>
         <div className="iam">I am <span className="hand">{PROFILE.first}</span> –</div>
-        <h1>Building<br/>my <span className="u">internet<Squiggle /></span><span className="dot">.</span></h1>
+        <h1>Dream<span className="dot">.</span> Code<span className="dot">.</span><br/><span className="u">Build<Squiggle /></span><span className="dot">.</span></h1>
         <p className="lede">A frontend engineer who turns live data, APIs and half-formed ideas into interfaces people actually enjoy using.</p>
         <div className="cta">
           <a className="btn" href="#work"><Icon n="brief" /> See my work</a>
