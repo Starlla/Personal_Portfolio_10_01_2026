@@ -1,6 +1,6 @@
 # Claire Tong · Portfolio
 
-Personal portfolio for Claire Tong, a frontend engineer in San Francisco. Built with React and Vite.
+Personal portfolio for Claire Tong, a full stack developer in San Francisco. Built with React and Vite.
 
 ## Features
 

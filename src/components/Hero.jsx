@@ -18,14 +18,14 @@ export function Hero() {
     </div>
     <div className="hero-body">
       <div>
-        <span className="badge">Frontend engineer · {PROFILE.city}</span>
+        <span className="badge">Full stack developer · {PROFILE.city}</span>
         <div className="iam">I am <span className="hand">{PROFILE.first}</span> –</div>
         <h1>Dream<span className="dot">.</span> Code<span className="dot">.</span><br/><span className="u">Build<Squiggle /></span><span className="dot">.</span></h1>
-        <p className="lede">A frontend engineer who turns live data, APIs and half-formed ideas into interfaces people actually enjoy using.</p>
+        <p className="lede">A full stack developer who turns live data, APIs and half-formed ideas into products people actually enjoy using.</p>
         <div className="cta">
           <a className="btn" href="#work"><Icon n="brief" /> See my work</a>
           <a className="btn ghost" href={PROFILE.resume} target="_blank" rel="noopener"><Icon n="download" /> View résumé</a>
-          <a className="link" href="#contact">Open to frontend roles <Icon n="arrow" /></a>
+          <a className="link" href="#contact">Open to full stack roles <Icon n="arrow" /></a>
         </div>
       </div>
       <div className="deck-wrap">

@@ -26,7 +26,7 @@ export function Contact() {
         <path d="M22 18v8M18 22h8" stroke="var(--yellow)" strokeWidth="2.5" strokeLinecap="round"/>
       </svg>
       <div className="cta-r">
-        <p>Hiring for a frontend role, or have a project in mind? My inbox is always open.</p>
+        <p>Hiring for a full stack role, or have a project in mind? My inbox is always open.</p>
         <div className="mail">
           <span id="email-addr" className="addr">{PROFILE.email}</span>
           <button className="btn sm" onClick={copy}>{copied ? "Copied" : "Copy email"}</button>
