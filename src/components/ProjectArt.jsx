@@ -1,3 +1,5 @@
+const LOOP_BARS = Array.from({ length: 48 }, (_, i) => Math.round(8 + 46 * Math.abs(Math.sin(i * 0.9) * Math.cos(i * 0.31)) + (i % 8 === 0 ? 10 : 0)));
+
 export function Art({ type }) {
   if (type === "site") return (<div className="art" style={{ background: "linear-gradient(160deg,#efeaff,#ffffff)", padding: 10, display: "grid", gap: 6, alignContent: "start" }}>
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -17,6 +19,14 @@ export function Art({ type }) {
         <i style={{ height: 6, width: "65%", borderRadius: 3, background: "#3a3366" }}></i>
       </div>
     </div></div>);
+  if (type === "loophaus") return (<div className="art" style={{ background: "#121212" }}>
+    <svg viewBox="0 0 200 80" preserveAspectRatio="none" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
+      {LOOP_BARS.map((h, i) => (<rect key={i} x={4 + i * 4} y={44 - h / 2} width="2.4" height={h} rx="1.2" fill={i < 27 ? "#fd746c" : "#3a3950"} />))}
+      <rect x="111" y="22" width="1.6" height="52" fill="#f5f1ed" />
+    </svg>
+    <span style={{ position: "absolute", left: 10, top: 8, fontFamily: "var(--f-mono)", fontSize: 10, letterSpacing: ".12em", color: "#f5f1ed" }}>LOOPHAUS</span>
+    <span style={{ position: "absolute", right: 10, top: 8, fontFamily: "var(--f-mono)", fontSize: 10, color: "#a45dff" }}>128 BPM · A min</span>
+  </div>);
   if (type === "crypto") return (<div className="art" style={{ background: "linear-gradient(160deg,#241a55,#120e2b)" }}>
     <svg viewBox="0 0 200 80" preserveAspectRatio="none" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
       <defs><linearGradient id="cg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stopColor="#7b5dff" stopOpacity=".55"/><stop offset="1" stopColor="#7b5dff" stopOpacity="0"/></linearGradient></defs>

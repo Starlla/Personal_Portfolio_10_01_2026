@@ -15,7 +15,7 @@ export function Bento() {
     </div>
     <div className="box warm">
       <h3>Now Shipping <span className="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span></h3>
-      <div className="player"><div className="cover">CD</div><div><b>crypto_dash</b><span>React 19 · Vite</span></div></div>
+      <div className="player"><div className="cover">LH</div><div><b>loophaus</b><span>React · Canvas</span></div></div>
       <div className="track" style={{ background: "color-mix(in srgb,#ff8a3d 20%,var(--tile))" }}><i style={{ width: "72%", background: "#ff8a3d" }}></i></div>
     </div>
     <div className="box">

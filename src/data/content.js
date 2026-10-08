@@ -23,14 +23,14 @@ export const PROJECTS = [
     links: [{ label: "Visit live site", href: "https://claire-personal-website-may-2026.vercel.app/" }],
   },
   {
-    id: "crypto-dash", title: "Crypto Dash", kind: "Frontend", sub: "React dashboard", year: "2026",
-    tags: ["React 19", "Vite", "React Router", "Chart.js"],
-    role: "Solo build",
-    problem: "Market data is noisy. I wanted a fast way to scan the top coins, reorder them by what I care about, and look closer at one.",
-    did: ["Pulled live market data from the CoinGecko API with loading and error states", "Added search by name or symbol, a result-count selector, and sorting by market cap, price or 24h change", "Built a coin detail page with a time-series price chart (Chart.js + date-fns)", "Set up client-side routing with an About page and a custom 404"],
-    learned: "Keeping filter, sort and limit as plain state in one place made every control easy to combine.",
-    art: "crypto",
-    links: [{ label: "View on GitHub", href: "https://github.com/Starlla/crypto_dash" }],
+    id: "loophaus", title: "Loophaus", kind: "Frontend", sub: "Landing page · React", year: "2026",
+    tags: ["React 18", "Vite", "Canvas", "Accessibility"],
+    role: "Solo build: design and code",
+    problem: "Music makers share work on feeds built for everyone else. I designed a landing page for a fictional sharing platform made just for producers, sound designers and labels, with a look that feels like sound.",
+    did: ["Drew an animated canvas waveform with a moving playhead, crisp on high-DPI screens", "Built giant split-word tabs that swap the feature grid for each audience, keyboard accessible with the ARIA tabs pattern", "Made an interactive track card showing tempo, key, LUFS loudness and stem meters, plus a spin counter", "Added a rotating hero headline, scroll-triggered letter reveals, a build timeline and an early-access form with validation", "Respected reduced-motion settings and kept the layout responsive down to about 360px"],
+    learned: "Motion works best when it carries the subject. The waveform and letter reveals tell you it's about music before you read a word.",
+    art: "loophaus",
+    links: [{ label: "Visit live site", href: "https://creative-website-cyan.vercel.app/" }, { label: "View on GitHub", href: "https://github.com/Starlla/Creative-Website" }],
   },
   {
     id: "ecommerce", title: "MERN Storefront", kind: "Full-stack", sub: "E-commerce · API + UI", year: "2021",
@@ -54,4 +54,4 @@ export const PROJECTS = [
   },
 ];
 
-export const TWIN_ASKS = ["What are you building right now?", "What's your tech stack?", "What kind of role are you looking for?", "Tell me about Crypto Dash"];
+export const TWIN_ASKS = ["What are you building right now?", "What's your tech stack?", "What kind of role are you looking for?", "Tell me about your projects"];
