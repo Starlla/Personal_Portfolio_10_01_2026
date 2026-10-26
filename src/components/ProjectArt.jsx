@@ -19,6 +19,10 @@ export function Art({ type }) {
         <i style={{ height: 6, width: "65%", borderRadius: 3, background: "#3a3366" }}></i>
       </div>
     </div></div>);
+  if (type === "retro") return (<div className="art" style={{ background: "linear-gradient(135deg,#fff1e0,#ffe0ec)" }}>
+    <div style={{ position: "absolute", left: "26%", top: "9%", height: "82%", aspectRatio: "54/86", maxWidth: "100%", background: "#fff", borderRadius: 4, padding: "4px 4px 12px", boxShadow: "0 8px 16px -8px rgba(40,20,90,.45)", transform: "rotate(-7deg)" }}><div style={{ height: "100%", borderRadius: 2, background: "linear-gradient(160deg,#ffd27a,#ff7a8a 60%,#7b5dff)" }}></div></div>
+    <div style={{ position: "absolute", left: "50%", top: "9%", height: "82%", aspectRatio: "54/86", maxWidth: "100%", background: "#fff", borderRadius: 4, padding: "4px 4px 12px", boxShadow: "0 8px 16px -8px rgba(40,20,90,.45)", transform: "rotate(6deg)" }}><div style={{ height: "100%", borderRadius: 2, background: "linear-gradient(160deg,#9fe3ff,#5b8cff 55%,#2a1a6e)" }}></div></div>
+  </div>);
   if (type === "loophaus") return (<div className="art" style={{ background: "#121212" }}>
     <svg viewBox="0 0 200 80" preserveAspectRatio="none" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
       {LOOP_BARS.map((h, i) => (<rect key={i} x={4 + i * 4} y={44 - h / 2} width="2.4" height={h} rx="1.2" fill={i < 27 ? "#fd746c" : "#3a3950"} />))}

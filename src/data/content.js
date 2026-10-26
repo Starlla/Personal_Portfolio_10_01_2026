@@ -43,14 +43,14 @@ export const PROJECTS = [
     links: [{ label: "Frontend repo", href: "https://github.com/Starlla/ecommerce-front" }, { label: "API repo", href: "https://github.com/Starlla/Ecommerce" }],
   },
   {
-    id: "pace-exchange", title: "PaceExchange", kind: "Mobile", sub: "Android · Firebase", year: "2019",
-    tags: ["Android", "Java", "Firebase"],
-    role: "App design and development, including the custom icon set",
-    problem: "Students had no easy, trusted place to swap things with each other on campus.",
-    did: ["Built listings with photo upload and image processing (rotation, scaling)", "Created a shop feed, likes, and a profile with your own items", "Designed an offer flow: send offers from your inventory, then receive and confirm them", "Stored users, posts and offers in Firebase; drew most of the app's vector icons myself"],
-    learned: "My first big project. Shipping a complete flow taught me more than any single feature.",
-    art: "mobile",
-    links: [{ label: "View on GitHub", href: "https://github.com/Starlla/PaceExchange" }],
+    id: "retro-prints", title: "2 Retro Prints", kind: "Mobile", sub: "iOS app · React Native", year: "2026",
+    tags: ["React Native", "TypeScript", "Expo"],
+    role: "Solo build: design, code and App Store release",
+    problem: "Getting a phone photo ready for an Instax-style print means cropping, framing and exporting across several apps. I wanted one polished app that does it in a few taps.",
+    did: ["Built the app with Expo and React Native in TypeScript, and shipped it to the App Store", "Let people capture a new photo or pick one from the camera roll with the image picker", "Rendered print-ready Instax-style frames and saved or shared them through the media library", "Added haptic feedback and a clean, modern UI so each step feels responsive"],
+    learned: "Native touches like haptics and the system photo picker make a cross-platform app feel at home on the phone.",
+    art: "retro",
+    links: [{ label: "View on the App Store", href: "https://apps.apple.com/us/app/2-retro-prints/id6758162927" }],
   },
 ];
 
