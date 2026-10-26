@@ -118,7 +118,7 @@ a,button,[role="switch"],label{cursor:var(--cur-pointer)}
 .pills{display:flex;flex-wrap:wrap;gap:8px}
 .pill{border:1px solid var(--line);background:var(--tile);border-radius:10px;padding:7px 14px;font-weight:700;font-size:12px;cursor:var(--cur-pointer)}
 .pill[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px;flex:1;align-content:start}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px;flex:1;align-content:start}
 .tile{position:relative;border-radius:16px;padding:16px 16px 40px;text-align:left;border:0;cursor:var(--cur-pointer);background:var(--dark);color:var(--on-dark);
   display:flex;flex-direction:column;gap:2px;overflow:hidden;transition:transform .2s,box-shadow .2s}
 .tile:hover{transform:translateY(-4px);box-shadow:0 18px 30px -16px rgba(40,20,140,.6)}
@@ -318,6 +318,12 @@ footer nav a:hover{background:#2b2650;opacity:1}
 .drawer h4{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin:26px 0 8px}
 .drawer p{margin:0}
 .drawer ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.games{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.games a{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:8px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--tile);text-decoration:none;transition:border-color .15s,transform .15s}
+.games a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.games b{font-size:13px}
+.games span{grid-column:1;font-size:11px;color:var(--ink-soft)}
+.games .icon{grid-column:2;grid-row:1/span 2;width:15px;height:15px;color:var(--accent)}
 .drawer .shot{display:block;width:100%;max-width:100%;height:auto;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
 .drawer .art{height:150px;margin:0}
 .x{width:38px;height:38px;border-radius:12px;border:0;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;cursor:var(--cur-pointer)}

@@ -33,7 +33,7 @@ export function Bento() {
     <div className="box mintbg">
       <h3>Build Log <span style={{ color: "var(--mint)" }}><Icon n="code" /></span></h3>
       <div className="log">
-        {PROJECTS.slice().reverse().map(p => (<div key={p.id}><span>{p.year}</span><b style={{ fontWeight: 600 }}>{p.title}</b></div>))}
+        {PROJECTS.filter(p => p.year).sort((a, b) => a.year - b.year).map(p => (<div key={p.id}><span>{p.year}</span><b style={{ fontWeight: 600 }}>{p.title}</b></div>))}
       </div>
       <span className="chip">Ships when it works</span>
     </div>

@@ -52,6 +52,24 @@ export const PROJECTS = [
     art: "retro",
     links: [{ label: "View on the App Store", href: "https://apps.apple.com/us/app/2-retro-prints/id6758162927" }],
   },
+  {
+    id: "unity-games", title: "Unity Mini Games", kind: "Games", sub: "6 browser games · Unity", year: "",
+    tags: ["Unity", "C#", "WebGL"],
+    role: "Solo builds, published on itch.io",
+    problem: "I wanted to learn game development by finishing small games, each one built around a single classic mechanic.",
+    did: ["Built six small games in Unity: a platformer, a lunar lander, an endless runner, a Bomberman-style game, a color matcher and a primitives game", "Exported each one to WebGL so it plays right in the browser, no download needed", "Kept the controls simple and keyboard-first, like A / D to move and Space to jump", "Published them all on itch.io under my Cyoi profile"],
+    learned: "Small finished games teach more than big unfinished ones. Each one made me tune the feel, the controls and the win or lose loop.",
+    art: "games",
+    games: [
+      { name: "Rabbit Run", note: "Platformer", href: "https://cyoi.itch.io/rabbit-run" },
+      { name: "Lunar Lander", note: "Physics", href: "https://cyoi.itch.io/lunarlander" },
+      { name: "Endless Runner", note: "Runner", href: "https://cyoi.itch.io/endlessrunner" },
+      { name: "Bomberman", note: "Arena", href: "https://cyoi.itch.io/bomberman" },
+      { name: "Color Matcher", note: "Puzzle", href: "https://cyoi.itch.io/colormatcher" },
+      { name: "Game Of Primitives", note: "Arcade", href: "https://cyoi.itch.io/gameofprimitives" },
+    ],
+    links: [{ label: "See all on itch.io", href: "https://cyoi.itch.io/" }],
+  },
 ];
 
 export const TWIN_ASKS = ["What are you building right now?", "What's your tech stack?", "What kind of role are you looking for?", "Tell me about your projects"];

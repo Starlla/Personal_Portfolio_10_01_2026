@@ -19,6 +19,20 @@ export function Art({ type }) {
         <i style={{ height: 6, width: "65%", borderRadius: 3, background: "#3a3366" }}></i>
       </div>
     </div></div>);
+  if (type === "games") return (<div className="art" style={{ background: "#141226" }}>
+    <svg viewBox="0 0 200 80" preserveAspectRatio="xMidYMax slice" shapeRendering="crispEdges" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
+      <rect x="0" y="66" width="200" height="14" fill="#2b2650" />
+      <rect x="0" y="66" width="200" height="3" fill="#20c997" />
+      <rect x="40" y="46" width="34" height="5" fill="#5b3df5" />
+      <rect x="112" y="34" width="30" height="5" fill="#5b3df5" />
+      <rect x="160" y="50" width="26" height="5" fill="#5b3df5" />
+      <rect x="50" y="36" width="5" height="5" fill="#ffe14d" /><rect x="60" y="36" width="5" height="5" fill="#ffe14d" />
+      <rect x="122" y="24" width="5" height="5" fill="#ffe14d" /><rect x="132" y="24" width="5" height="5" fill="#ffe14d" />
+      <rect x="18" y="54" width="10" height="12" fill="#f1efff" /><rect x="19" y="46" width="3" height="8" fill="#f1efff" /><rect x="24" y="46" width="3" height="8" fill="#f1efff" /><rect x="25" y="58" width="2" height="2" fill="#141226" />
+      <rect x="94" y="12" width="8" height="6" fill="#ff5fa2" /><rect x="92" y="18" width="2" height="4" fill="#ff5fa2" /><rect x="102" y="18" width="2" height="4" fill="#ff5fa2" /><rect x="96" y="20" width="4" height="3" fill="#ffb36b" />
+    </svg>
+    <span style={{ position: "absolute", right: 10, top: 8, fontFamily: "var(--f-mono)", fontSize: 10, color: "#ffe14d" }}>PLAY ▶</span>
+  </div>);
   if (type === "retro") return (<div className="art" style={{ background: "linear-gradient(135deg,#fff1e0,#ffe0ec)" }}>
     <div style={{ position: "absolute", left: "26%", top: "9%", height: "82%", aspectRatio: "54/86", maxWidth: "100%", background: "#fff", borderRadius: 4, padding: "4px 4px 12px", boxShadow: "0 8px 16px -8px rgba(40,20,90,.45)", transform: "rotate(-7deg)" }}><div style={{ height: "100%", borderRadius: 2, background: "linear-gradient(160deg,#ffd27a,#ff7a8a 60%,#7b5dff)" }}></div></div>
     <div style={{ position: "absolute", left: "50%", top: "9%", height: "82%", aspectRatio: "54/86", maxWidth: "100%", background: "#fff", borderRadius: 4, padding: "4px 4px 12px", boxShadow: "0 8px 16px -8px rgba(40,20,90,.45)", transform: "rotate(6deg)" }}><div style={{ height: "100%", borderRadius: 2, background: "linear-gradient(160deg,#9fe3ff,#5b8cff 55%,#2a1a6e)" }}></div></div>

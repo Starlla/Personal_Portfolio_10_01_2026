@@ -16,7 +16,7 @@ export function Work({ onOpen }) {
       {list.map((p, idx) => (<button key={p.id}
           className={"tile" + (list.length % 2 && idx === 0 ? " wide" : "") + (p.art === "shop" ? " light" : "")}
           onClick={() => onOpen(p)} aria-label={"Open case study: " + p.title}>
-        <b>{p.title}</b><small>{p.sub} · {p.year}</small>
+        <b>{p.title}</b><small>{p.year ? p.sub + " · " + p.year : p.sub}</small>
         <Art type={p.art} />
         <Icon n="out" cls="go" />
       </button>))}
