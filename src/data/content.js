@@ -12,6 +12,16 @@ export const PROFILE = {
 
 export const PROJECTS = [
   {
+    id: "ascii-jellyfish", title: "ASCII Jellyfish", kind: "Frontend", sub: "Portfolio · Next.js", year: "2026",
+    tags: ["Next.js 15", "React 19", "TypeScript", "Canvas"],
+    role: "Solo build: design, code and deploy",
+    problem: "I wanted a calmer, darker portfolio that still felt alive, with a background that reacts to you, and real HTML text so search engines can read every word.",
+    did: ["Drew a school of jellyfish as ASCII characters on a plain 2D canvas: each frame moves them, paints a brightness grid and draws each cell as a character", "Made the jellyfish drift toward the cursor, so the page responds as you move around it", "Ran the animation in requestAnimationFrame outside React state, so React never re-renders at 60fps", "Built it with Next.js as a static export, with SEO tags, Open Graph cards, structured data, a sitemap and robots.txt", "Respected reduced-motion settings with a still frame, and styled it as a dark deep-sea theme with glass panels"],
+    learned: "Keeping animation out of React state is what made it smooth. React renders the page once, and the canvas does the rest.",
+    art: "jelly",
+    links: [{ label: "Visit live site", href: "https://personal-portfolio-10-31-2026.vercel.app/" }, { label: "View on GitHub", href: "https://github.com/Starlla/Personal_Portfolio_10_31_2026" }],
+  },
+  {
     id: "personal-site", title: "Personal Website", kind: "Frontend", sub: "React · Vercel", year: "2026",
     tags: ["React", "Vite", "Vercel", "Hugging Face"],
     role: "Solo build: design, code and deploy",

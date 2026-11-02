@@ -1,5 +1,8 @@
 const LOOP_BARS = Array.from({ length: 48 }, (_, i) => Math.round(8 + 46 * Math.abs(Math.sin(i * 0.9) * Math.cos(i * 0.31)) + (i % 8 === 0 ? 10 : 0)));
 
+const JELLY = ["   _.-~~~-._   ", "  (  . : .  )  ", "   '-.,_,.-'   ", "    ( ( ( (    ", "     ) ) ) )   ", "    ( ( ( (    ", "     ' ' ' '   "].join("\n");
+const SEA = Array.from({ length: 16 }, (_, r) => Array.from({ length: 170 }, (_, c) => ((r * 31 + c * 17) % 23 === 0 ? "·" : (r * 7 + c * 13) % 41 === 0 ? ":" : " ")).join("")).join("\n");
+
 export function Art({ type }) {
   if (type === "site") return (<div className="art" style={{ background: "linear-gradient(160deg,#efeaff,#ffffff)", padding: 10, display: "grid", gap: 6, alignContent: "start" }}>
     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -19,6 +22,11 @@ export function Art({ type }) {
         <i style={{ height: 6, width: "65%", borderRadius: 3, background: "#3a3366" }}></i>
       </div>
     </div></div>);
+  if (type === "jelly") return (<div className="art" style={{ background: "radial-gradient(circle at 70% 30%,#13304a,#07090d 70%)" }}>
+    <pre aria-hidden="true" style={{ position: "absolute", inset: 0, fontFamily: "var(--f-mono)", margin: 0, padding: 6, fontSize: 9, lineHeight: 1.1, color: "#3b5b78", whiteSpace: "pre", overflow: "hidden" }}>{SEA}</pre>
+    <pre aria-hidden="true" style={{ position: "absolute", left: "14%", top: "12%", fontFamily: "var(--f-mono)", margin: 0, fontSize: 13, lineHeight: 1.05, color: "#7fe7e0", whiteSpace: "pre", textShadow: "0 0 8px rgba(127,231,224,.6)" }}>{JELLY}</pre>
+    <pre aria-hidden="true" style={{ position: "absolute", right: "16%", top: "30%", fontFamily: "var(--f-mono)", margin: 0, fontSize: 10, lineHeight: 1.05, color: "#ff8cc4", whiteSpace: "pre", textShadow: "0 0 8px rgba(255,140,196,.6)" }}>{JELLY}</pre>
+  </div>);
   if (type === "island") return (<div className="art">
     <svg viewBox="0 0 200 80" preserveAspectRatio="xMidYMid slice" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
       <rect width="200" height="80" fill="#cfe9ff" />
