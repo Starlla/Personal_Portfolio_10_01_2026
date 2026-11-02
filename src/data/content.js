@@ -33,6 +33,16 @@ export const PROJECTS = [
     links: [{ label: "Visit live site", href: "https://creative-website-cyan.vercel.app/" }, { label: "View on GitHub", href: "https://github.com/Starlla/Creative-Website" }],
   },
   {
+    id: "cafe-on-island", title: "Café on Island", kind: "3D", sub: "3D scene · Three.js", year: "2026",
+    tags: ["Three.js", "WebGL", "Web Audio API"],
+    role: "Solo build: modeling in code, lighting, motion and sound",
+    problem: "I wanted to see how far a single HTML file could go: a cozy little world you can spin around, with its own weather and soundtrack, no game engine needed.",
+    did: ["Built a pastel-blue café, a pink bakery and a large cherry blossom tree on a white-sand island entirely in Three.js code", "Added orbit controls (drag to rotate, scroll or pinch to zoom) with a slow auto-rotation you can pause", "Animated drifting petals with instanced meshes, plus a rowing boat, seagulls and a bank of clouds, with soft shadows and fog", "Generated a chill lo-fi soundtrack live with the Web Audio API: soft keys, bass, light drums and ocean waves, with toggles for music and petals"],
+    learned: "Atmosphere is mostly small things in motion. The petals, the waves and the slow camera do more than any single model.",
+    art: "island",
+    links: [{ label: "Visit live site", href: "https://cafeonisland.vercel.app/" }],
+  },
+  {
     id: "ecommerce", title: "MERN Storefront", kind: "Full-stack", sub: "E-commerce · API + UI", year: "2021",
     tags: ["React", "Node · Express", "MongoDB", "JWT", "Braintree"],
     role: "End to end: REST API, data models, React storefront",

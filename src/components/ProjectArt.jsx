@@ -19,6 +19,20 @@ export function Art({ type }) {
         <i style={{ height: 6, width: "65%", borderRadius: 3, background: "#3a3366" }}></i>
       </div>
     </div></div>);
+  if (type === "island") return (<div className="art">
+    <svg viewBox="0 0 200 80" preserveAspectRatio="xMidYMid slice" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
+      <rect width="200" height="80" fill="#cfe9ff" />
+      <ellipse cx="40" cy="20" rx="26" ry="8" fill="#fff" opacity=".85" /><ellipse cx="165" cy="16" rx="22" ry="6" fill="#fff" opacity=".85" />
+      <rect y="52" width="200" height="28" fill="#7cc6f0" />
+      <ellipse cx="100" cy="58" rx="62" ry="10" fill="#fbf1dc" />
+      <rect x="60" y="38" width="22" height="16" rx="2" fill="#8fc7ff" /><path d="M58 39 L71 30 L84 39 Z" fill="#5b8cff" /><rect x="68" y="45" width="6" height="9" fill="#fff" />
+      <rect x="118" y="40" width="20" height="14" rx="2" fill="#ffb7d2" /><path d="M116 41 L128 32 L140 41 Z" fill="#ff5fa2" /><rect x="125" y="46" width="6" height="8" fill="#fff" />
+      <rect x="97" y="34" width="3" height="20" fill="#8a5a3c" />
+      <circle cx="98" cy="28" r="12" fill="#ffc1dd" /><circle cx="88" cy="32" r="8" fill="#ffd3e6" /><circle cx="108" cy="32" r="8" fill="#ffb0d2" />
+      <circle cx="150" cy="30" r="1.6" fill="#ff8cc4" /><circle cx="160" cy="40" r="1.4" fill="#ff8cc4" /><circle cx="44" cy="44" r="1.4" fill="#ff8cc4" />
+      <path d="M170 64 q6 4 12 0 Z" fill="#8a5a3c" />
+    </svg>
+  </div>);
   if (type === "games") return (<div className="art" style={{ background: "#141226" }}>
     <svg viewBox="0 0 200 80" preserveAspectRatio="xMidYMax slice" shapeRendering="crispEdges" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
       <rect x="0" y="66" width="200" height="14" fill="#2b2650" />
