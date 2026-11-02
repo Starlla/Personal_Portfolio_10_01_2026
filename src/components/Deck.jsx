@@ -4,7 +4,7 @@ import MOCHI from "../assets/mochi.webp";
 
 const DECK = [
   { id: "me", bg: "#efe8e6" },
-  { id: "mochi", bg: "#3ea6e6", img: MOCHI, alt: "Mochi the cat in round glasses: small cat, big dreams" },
+  { id: "mochi", bg: "#f6f1f8", img: MOCHI, alt: "Mochi the cat in a purple MOCHI hoodie" },
   { id: "shop", bg: "linear-gradient(170deg,#ffd27a 0%,#ff7a8a 45%,#3a2a8a 100%)", label: "MERN Storefront", sub: "Node · MongoDB" },
   { id: "retro", bg: "linear-gradient(170deg,#7ad3ff 0%,#7b5dff 50%,#24124f 100%)", label: "2 Retro Prints", sub: "React Native · Expo" },
 ];
